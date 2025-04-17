@@ -60,16 +60,18 @@ const data = [
 
 const CardList = () => {
   return (
-    <div className="flex flex-wrap gap-4 items-center justify-evenly w-full ">
-      {data.map((item, index) => (
-        <TsCard
-          key={index}
-          title={item.title}
-          desc={item.desc}
-          icon={item.icon}
-          onClick={item.onClick}
-        />
-      ))}
+    <div className="flex flex-row gap-4  items-center  w-full ">
+      <div className="flex justify-between items-center w-[82vw] gap-4 p-4 ">
+        {data.map((item, index) => (
+          <TsCard
+            key={index}
+            title={item.title}
+            desc={item.desc}
+            icon={item.icon}
+            onClick={item.onClick}
+          />
+        ))}
+      </div>
     </div>
   );
 };

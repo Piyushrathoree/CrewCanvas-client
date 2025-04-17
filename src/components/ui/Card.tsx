@@ -7,7 +7,7 @@ interface CardProps {
 
 const TsCard = (props: CardProps) => {
   return (
-    <div className="p-6 rounded-2xl shadow-md transition-all bg-black flex flex-col items-center gap-3 w-full max-w-sm border-2 border-white/20 cursor-pointer hover:-translate-y-1 hover:text-white">
+    <div className="p-6 rounded-2xl shadow-md transition-all bg-black flex flex-col items-center gap-2 w-full max-w-sm border-2 border-white/20 cursor-pointer hover:-translate-y-1 hover:text-white">
       <div className="flex flex-row items-center justify-start gap-4 w-full text-xl">
         {/* Icon */}
         <div className="flex-row gap-3 text-white">{props.icon}</div>
